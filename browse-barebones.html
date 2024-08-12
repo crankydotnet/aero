@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <style>
+      @import url("css/style.css");
+    </style>
+    <script src="js/background.js"></script>
+    <script>
+      function load() {
+        const search = document.getElementById("searchbar").value;
+        const device = document.getElementById("screen");
+        device.src = search;
+      }
+    </script>
+  </head>
+  <body style="background-color: blue;">
+    <div class="glass">
+      <h1>Browser</h1>
+    </div>
+    <input class="" id="searchbar" value="https://"/>
+    <button class="" onclick="load()">Q</button>
+  </br>
+    <iframe height="720px" width="1280px" id="screen"/>
+  </body>
+</html>
